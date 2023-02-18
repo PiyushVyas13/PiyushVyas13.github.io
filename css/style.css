@@ -3,8 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
+body,
+html {
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -125,7 +127,7 @@ img {
   background: #7700ff;
 }
 
-.image img {
+.hero .image img {
   width: 345px;
   border-radius: 100%;
 }
@@ -142,5 +144,92 @@ img {
 
   .hero img {
     width: 200px;
+  }
+
+  .about {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .about .container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    /* padding-top: 4rem;
+    padding-bottom: 4rem; */
+  }
+
+  .about img {
+    width: 200px;
+  }
+}
+
+.about .image img {
+  width: 345px;
+}
+
+.about .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+
+.about .content {
+  max-width: 600px;
+  display: grid;
+  gap: 1rem;
+}
+
+.about .content h2 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+
+.about .content h2 span {
+  color: #7700ff;
+}
+
+.skills .container {
+  display: grid;
+  text-align: center;
+  gap: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.skills .skills-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+
+.skills .skills-wrapper span {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  border-bottom: 5px solid #7700ff;
+  width: fit-content;
+  margin: auto;
+  padding-bottom: 1rem;
+}
+
+.skills .skills-wrapper i {
+  font-size: 0.5rem;
+}
+@media screen and (max-width: 768px) {
+  .skills .skills-wrapper span {
+    font-size: 1.5rem;
   }
 }
