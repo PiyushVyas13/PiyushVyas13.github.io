@@ -139,4 +139,8 @@ img {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
+
+  .hero img {
+    width: 200px;
+  }
 }
